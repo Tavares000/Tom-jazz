@@ -1,0 +1,71 @@
+.rodape{
+  padding: 2em;
+}
+.rodape p{
+  font-size: 1em;
+  font-weight: 500;
+  margin: 1em 0;
+}
+.footer_menu{
+  display: grid;
+}
+.footer_menu_item{
+color: var(--color-black);
+font-size: 1.25rem;
+font-weight: 500;
+padding: 1em 0;
+}
+.footer_menu_item:hover{
+  color: var(--color-primary);
+}
+.footer_text_email{
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-right: 1em;
+}
+.footer_email{
+  display: grid;
+  margin: 2.5em 0 0.4em 0;
+}
+.footer_caixa_email{
+  margin-top: 0.5em;
+  padding: 1em 0;
+  border: 2px solid #000;
+  background: var(--color-white);
+  box-shadow: 4px 4px 0px 0px #000;
+}
+.footer_caixa_email::placeholder{
+  padding-left: 0.5em ;
+}
+
+@media screen and (min-width:740px) {
+.container_footer{
+  display: flex;
+  margin: 0 auto;
+  max-width: 72rem;
+}
+.footer_logo{
+  flex: 2;
+  padding-top: 1em;
+}
+.footer_menu{
+  flex: 1;
+
+}
+.footer_email{
+  flex: 3;
+  margin: 0;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.footer_logo p{
+  padding-right: 3rem;
+}
+}
+@media screen and (min-width:1728px) {
+  .container_footer{
+    max-width: 1500px;
+  }
+  
+}

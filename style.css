@@ -1,0 +1,80 @@
+@import url("./styles/header.css");
+@import url("./styles/apresentacao.css");
+@import url("./styles/cursos.css");
+@import url("./styles/footer.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+:root{
+  --color-primary: #ED4D1B;
+  --color-secundary: #FF9A3C;
+  --color-black: #000;
+  --color-white: #fff;
+}
+body{
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100% );
+  color: var(--color-black);
+  padding: 0 1rem;
+  font-weight: 500;
+}
+.borda{
+  border-color: var (--color-black);
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  padding: 1.25em;
+}
+.button{
+  text-align: center;
+  max-width: 14rem;
+  font-size: 1.25em;
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 0.75rem 1rem;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0px 0px #1E1E1E;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+.button:hover{
+  transform: scale(1.1);
+}
+.destaque{
+  color: var(--color-primary);
+}
+
+@media screen and (min-width:928px ) and (max-width:1024px) {
+  .container_928{
+    display: flex;
+    flex-direction: column;
+    max-width: 58rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 72rem;
+  }
+  .container.row-reverse{
+    flex-direction: row-reverse;
+  }
+      
+  }
+@media screen and (min-width:1728px) {
+  .container{
+    max-width: 1500px;
+  }
+  
+}
+

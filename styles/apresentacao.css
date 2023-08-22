@@ -1,0 +1,64 @@
+.apresentacao{
+  padding-right: 0; 
+}
+.apresentacao_img_jazz{
+  display: block;
+  margin: 1.25rem 0 0 auto;
+  max-width: 100%;
+}
+
+.espacamento{
+  padding-bottom: 15em;
+  box-sizing: border-box;
+}
+.apresentacao h1{
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 105%;
+}
+.apresentacao_text p{
+  font-size: 1.25em;
+  padding: 1em 1em 1em 0; 
+}
+.apresentacao_text .button{
+  position: relative;
+}
+.apresentacao_text .button::after{
+  content: '';
+  background: url("/assets/arrow-curve.svg");
+  height: 48px;
+  width: 128px;
+  top: 4em;
+  right: -2em;
+  position: absolute;
+}
+.apresentacao_text .destaque{
+  position: relative;
+  display: block;
+}
+.apresentacao_text .destaque::after{
+  background: url("/assets/three-dashes.svg");
+  content: '';
+  height: 36px;
+  width: 40px;
+  position: absolute;
+  top: -0.2em;
+
+}
+
+
+@media screen and (min-width:740px) {
+  .apresentacao h1{
+    font-size: 4em;
+  }
+}
+@media screen and (min-width:1024px) {
+  .apresentacao_img_jazz{
+    max-width: 60%;
+  }
+  
+
+}
+
+
+
